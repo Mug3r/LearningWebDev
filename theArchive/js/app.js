@@ -2,6 +2,7 @@ var music = document.getElementById('music');
 var duration;
 var playhead = document.getElementById('playhead');
 var timeline = document.getElementById('timeline');
+var tracklist = document.getElementById('tracklist');
 
 const timelineWidth = timeline.clientWidth;
 
@@ -60,3 +61,9 @@ music.addEventListener("canplaythrough", function () {
     duration = music.duration;
     
 }, false);
+
+function addTrack(title){
+    var entry = document.createElement('li');
+    entry.appendChild(document.createTextNode(title));
+    tracklist.appendChild(entry);
+}
