@@ -1,0 +1,27 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+}
+
+body{
+    background-color: #010;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+body div{
+    width: 100vw;
+    height: 500px;
+    max-height: 90vh;
+}
+div[id=text-input-area] {
+    
+    align-content: center;
+    align-items: center;
+}
+
+input[id=command-input]{
+    background-color: #010;
+    color: #080;
+    border: 0px;
+}
